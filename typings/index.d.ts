@@ -634,6 +634,7 @@ declare namespace ElementReact {
     onCurrentChange?(): void
     onSelectAll?(): void
     onSelectChange?(): void
+    onRowClick?(row: RowType, event: React.SyntheticEvent<HTMLInputElement>, column: Object):void
   }
   export class Table<RowType extends Object = Object> extends ElementReactLibs.Component<TableProps<RowType>, {}> { }
 
