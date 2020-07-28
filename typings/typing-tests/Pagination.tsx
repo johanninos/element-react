@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Pagination } from 'element-react'
-import { Pagination as PaginationNext } from 'element-react/next'
+import { Pagination } from 'element-react-ts'
+import { Pagination as PaginationNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   onCurrentChange = (currentPage) => { }

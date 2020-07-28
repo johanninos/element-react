@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Steps } from 'element-react'
-import { Steps as StepsNext } from 'element-react/next'
+import { Steps } from 'element-react-ts'
+import { Steps as StepsNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   render() {

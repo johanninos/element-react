@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Icon } from 'element-react'
-import { Icon as IconNext } from 'element-react/next'
+import { Icon } from 'element-react-ts'
+import { Icon as IconNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   onClose = () => { }

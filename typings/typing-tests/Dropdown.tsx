@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Dropdown } from 'element-react'
-import { Dropdown as DropdownNext } from 'element-react/next'
+import { Dropdown } from 'element-react-ts'
+import { Dropdown as DropdownNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
 

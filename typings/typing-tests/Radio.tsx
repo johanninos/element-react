@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Radio } from 'element-react'
-import { Radio as RadioNext } from 'element-react/next'
+import { Radio } from 'element-react-ts'
+import { Radio as RadioNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   state = {

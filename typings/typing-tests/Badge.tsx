@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Badge } from 'element-react'
-import { Badge as BadgeNext } from 'element-react/next'
+import { Badge } from 'element-react-ts'
+import { Badge as BadgeNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   render() {

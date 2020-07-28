@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Dialog } from 'element-react'
-import { Dialog as DialogNext } from 'element-react/next'
+import { Dialog } from 'element-react-ts'
+import { Dialog as DialogNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   onCancel = () => { }

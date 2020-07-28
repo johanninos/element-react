@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Notification } from 'element-react'
-import { Notification as NotificationNext } from 'element-react/next'
+import { Notification } from 'element-react-ts'
+import { Notification as NotificationNext } from 'element-react-ts/next'
 
 Notification('message')
 Notification('message', 'success')

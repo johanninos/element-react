@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Layout } from 'element-react'
-import { Layout as LayoutNext } from 'element-react/next'
+import { Layout } from 'element-react-ts'
+import { Layout as LayoutNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   render() {

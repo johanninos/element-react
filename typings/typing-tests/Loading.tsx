@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Loading } from 'element-react'
-import { Loading as LoadingNext } from 'element-react/next'
+import { Loading } from 'element-react-ts'
+import { Loading as LoadingNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   render() {

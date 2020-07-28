@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Breadcrumb } from 'element-react'
-import { Breadcrumb as BreadcrumbNext } from 'element-react/next'
+import { Breadcrumb } from 'element-react-ts'
+import { Breadcrumb as BreadcrumbNext } from 'element-react-ts/next'
 
 class Component extends React.Component<{}, {}> {
   render() {
