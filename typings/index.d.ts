@@ -432,12 +432,12 @@ declare namespace ElementReact {
     rows?: number
 
     // event
-    onFocus?(e?: React.SyntheticEvent<HTMLInputElement>): void
+    onFocus?(e?: React.FocusEvent<HTMLInputElement>): void
     onBlur?(e?: React.SyntheticEvent<HTMLInputElement>): void
-    onChange?(e?: React.SyntheticEvent<HTMLInputElement>): void
+    onChange?(value?: string): void
     onIconClick?(): void
-    onMouseEnter?(e?: React.SyntheticEvent<HTMLDivElement>): void
-    onMouseLeave?(e?: React.SyntheticEvent<HTMLDivElement>): void
+    onMouseEnter?(e?: React.MouseEvent<HTMLDivElement>): void
+    onMouseLeave?(e?: React.MouseEvent<HTMLDivElement>): void
 
     // autoComplete
     autoComplete?: string
@@ -612,14 +612,14 @@ declare namespace ElementReact {
     width?: number
     align?: string
     sortable?: boolean
-    sortMethod?: () => void
+    sortMethod?: (a: RowType, b: RowType) => boolean
     resizable?: boolean
     formatter?: () => void
     selectable?: boolean
     fixed?: boolean | string
     filterMethod?: () => void
     filters?: Object[]
-    render?: (data? :RowType, column? :Object, index? :number) => void
+    render?: (data :RowType, column? :Object, index? :number) => void
   }
   interface TableProps<RowType> extends ElementReactLibs.ComponentProps<{}> {
     columns?: TableColumn<RowType>[]
@@ -628,13 +628,14 @@ declare namespace ElementReact {
     stripe?: boolean
     border?: boolean
     fit?: boolean
+    showHeader?:boolean
     rowClassName?(row?, index?): void
     style?: Object
     highlightCurrentRow?: boolean
     onCurrentChange?(): void
     onSelectAll?(): void
     onSelectChange?(): void
-    onRowClick?(row: RowType, event: React.SyntheticEvent<HTMLInputElement>, column: Object):void
+    onRowClick?(row: RowType, event: React.SyntheticEvent<HTMLTableRowElement>, column: Object):void
   }
   export class Table<RowType extends Object = Object> extends ElementReactLibs.Component<TableProps<RowType>, {}> { }
 
@@ -664,6 +665,7 @@ declare namespace ElementReact {
     labelWidth?: string | number
     labelSuffix?: string
     inline?: boolean
+    onSubmit?: (e:React.SyntheticEvent<HTMLFormElement>) => void
   }
   interface FormItemProps extends ElementReactLibs.ComponentProps<{}> {
     label?: string
